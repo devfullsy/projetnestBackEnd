@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { UserDto } from './user.dto';
 import { User } from './user.entity';
 import { IUser } from './user.interface';
 import { UserRepository } from './user.repository';
@@ -17,6 +16,10 @@ export class UserService {
       ...newUser,
     };
     return this.userRepository.save(nouveauUser);
+  }
+
+  commentaire(id: number, commentaires : any){
+    this.userRepository.update(id,commentaires);
   }
 
   openSession(mail : string, mdp : string): Promise<User>{

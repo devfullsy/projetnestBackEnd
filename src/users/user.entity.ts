@@ -22,4 +22,7 @@ export class User {
 
   @Column()
   poid: number;
+
+  @Column()
+  commentaire: string;
 }

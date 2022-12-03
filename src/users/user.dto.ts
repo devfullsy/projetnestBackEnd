@@ -19,5 +19,8 @@ export class UserDto {
 
   @IsNumber()
   poid: number;
+
+  @IsString()
+  commentaire: string;
   
 }
