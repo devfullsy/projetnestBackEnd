@@ -1,2 +1,9 @@
 branche du projet
 https://github.com/devfullsy/projetnestBackEnd.git
+pour qur le projet fonction:
+il faut télécharger wampserver
+creer un base de donnée avec comme nom db_muscu
+il le cloner depuis le lien ci-dessus.
+aller dans le dossier du projet
+ouvrir un terminal sur vscode lancer la commande npm install
+lancer la commande npm run start et voila l'application tourne sur le port 3001
