@@ -6,7 +6,7 @@ import { UserService } from './user.service';
 @Controller('users')
 export class UserController {
   constructor(private readonly userService: UserService) {}
-  @Get('/:all')
+  @Get('/all')
   getAllVehicles(): Promise<User[]> {
     return this.userService.getAllUsers();
   }
@@ -17,11 +17,6 @@ export class UserController {
       return this.userService.createUser(newUser);
   }
 
-  /*@Patch(':id')
-  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto);
-  }*/
-
   @Patch('/:id')
   commentaire(
     @Param('id') id : number , @Body() texte: string 
@@ -31,10 +26,10 @@ export class UserController {
 
   @Get('/:email/:password')
   opensession(
-    @Param('email') email : string,
-    @Param('password') password : string
+    @Param('email') mail : string,
+    @Param('password') pwd : string
     ):Promise<User>{
-      return this.userService.openSession(email,password) ;
+      return this.userService.openSession(mail,pwd) ;
       
   }
 }

@@ -1,7 +1,6 @@
 export interface IProgram{
   niveau: string;
-  seanceDebutant: string;
-  seanceAvance: string;
+  seances: string;
   alimentation: string;
   seche: string;
   masse: string;

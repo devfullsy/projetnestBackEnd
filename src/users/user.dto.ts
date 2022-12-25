@@ -1,4 +1,4 @@
-import { IsNumber, IsString } from 'class-validator';
+import { IsString } from 'class-validator';
 
 export class UserDto {
 
@@ -17,8 +17,8 @@ export class UserDto {
   @IsString()
   niveau: string;
 
-  @IsNumber()
-  poid: number;
+  @IsString()
+  poid: string;
 
   @IsString()
   commentaire: string;

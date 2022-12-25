@@ -11,15 +11,16 @@ export class UserService {
     return this.userRepository.find();
   }
 
-  createUser(newUser :IUser): Promise<User>{
+  createUser(newUser :IUser): any{
     const nouveauUser = {
       ...newUser,
     };
-    return this.userRepository.save(nouveauUser);
+  this.userRepository.save(nouveauUser);
+  return '200';
   }
 
-  commentaire(id: number, commentaires : any){
-    this.userRepository.update(id,commentaires);
+  commentaire(id: number, commentaire: any){
+    this.userRepository.update(id,commentaire);
   }
 
   openSession(mail : string, mdp : string): Promise<User>{

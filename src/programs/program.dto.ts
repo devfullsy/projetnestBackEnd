@@ -7,11 +7,8 @@ export class ProgramDto {
   niveau: string;
 
   @IsString()
-  seanceDebutant: string;
-
-  @IsString()
-  seanceAvance: string;
-
+  seances: string;
+  
   @IsString()
   alimentation: string;
 

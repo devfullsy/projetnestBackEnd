@@ -10,10 +10,7 @@ export class Program {
   niveau: string;
 
   @Column()
-  seanceDebutant: string;
-
-  @Column()
-  seanceAvance: string;
+  seances: string;
 
   @Column()
   alimentation: string;

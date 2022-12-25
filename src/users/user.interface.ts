@@ -4,6 +4,6 @@ export interface IUser{
     password:string;
     email:string;
     niveau:string;
-    poid:number;
+    poid:string;
     commentaire: string;
 }

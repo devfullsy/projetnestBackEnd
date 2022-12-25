@@ -5,13 +5,8 @@ import { ProgramService } from './program.service';
 @Controller('programs')
 export class ProgramController {
   constructor(private readonly programService: ProgramService) {}
-  @Get('/:debutant')
+  @Get('/program')
   getDebutant(): Promise<Program[]> {
-    return this.programService.getAllProgram();
-  }
-
-  @Get('/:avance')
-  getAvance(): Promise<Program[]> {
     return this.programService.getAllProgram();
   }
 }
