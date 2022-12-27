@@ -21,4 +21,4 @@ import { programModule } from './programs/program.module';
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule { }

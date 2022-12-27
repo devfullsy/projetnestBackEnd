@@ -1,4 +1,4 @@
-export interface IProgram{
+export interface IProgram {
   niveau: string;
   seances: string;
   alimentation: string;

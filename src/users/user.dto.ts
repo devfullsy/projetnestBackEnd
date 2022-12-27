@@ -22,5 +22,5 @@ export class UserDto {
 
   @IsString()
   commentaire: string;
-  
+
 }

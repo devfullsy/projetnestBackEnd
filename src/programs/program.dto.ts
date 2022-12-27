@@ -8,7 +8,7 @@ export class ProgramDto {
 
   @IsString()
   seances: string;
-  
+
   @IsString()
   alimentation: string;
 

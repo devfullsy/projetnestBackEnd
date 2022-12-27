@@ -4,9 +4,9 @@ import { ProgramRepository } from './program.repository';
 
 @Injectable()
 export class ProgramService {
-  constructor(private readonly programRepository : ProgramRepository){}
+  constructor(private readonly programRepository: ProgramRepository) { }
 
-  getAllProgram(): Promise<Program[]>{
+  getAllProgram(): Promise<Program[]> {
     return this.programRepository.find();
   }
 }

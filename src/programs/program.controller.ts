@@ -4,7 +4,7 @@ import { ProgramService } from './program.service';
 
 @Controller('programs')
 export class ProgramController {
-  constructor(private readonly programService: ProgramService) {}
+  constructor(private readonly programService: ProgramService) { }
   @Get('/program')
   getDebutant(): Promise<Program[]> {
     return this.programService.getAllProgram();

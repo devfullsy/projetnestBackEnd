@@ -4,7 +4,7 @@ import { ProgramController } from "./program.controller";
 import { ProgramService } from "./program.service";
 
 @Module({
-    controllers : [ProgramController],
-    providers:[ProgramService, ProgramRepository]
+    controllers: [ProgramController],
+    providers: [ProgramService, ProgramRepository]
 })
-export class programModule{}
+export class programModule { }
